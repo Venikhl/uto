@@ -1,0 +1,16 @@
+:root {
+    --primary: #EF3708;
+    --secondary: #2B2B2B;
+    --accent: #444;
+    --text: #F2F2F2;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary);
+    color: var(--text);        /* ✅ Белый цвет текста */
+    font-size: 20px;           /* ✅ Сделал шрифт чуть крупнее */
+    line-height: 1.5;
+  }
+  

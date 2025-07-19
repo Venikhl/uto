@@ -1,0 +1,116 @@
+
+
+/* ========== SIDEBAR ========== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: var(--primary);
+  padding: 20px;
+  border-radius: 0 60px 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  transition: width 0.3s ease;
+  z-index: 1000;
+  color: white; /* ✅ Белый цвет по умолчанию */
+  /* font-size: 20px; */
+}
+
+.collapsed {
+  width: 70px;
+}
+
+/* ========== LOGO AND TOGGLE ========== */
+.logoContainer {
+  position: relative;
+  width: 100%;
+  height: 40px; /* Задаём фиксированную высоту строки */
+  margin-bottom: 20px;
+}
+
+.menuText {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text);
+  pointer-events: none; /* чтобы не мешал кнопке */
+}
+.toggleBtn {
+  position: absolute;
+  right: 10px; /* ← сдвигаем левее */
+  top: 0;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  padding: 0;
+}
+
+
+
+/* ========== NAVIGATION ========== */
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 7vh;
+  width: 100%;
+  padding-top: 10vh;
+  align-items: center;
+}
+
+.link {
+  color: var(--secondary);
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.icon {
+  margin-top: 7px;
+  font-size: 1.7rem;
+}
+
+.label {
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+
+
+.link:hover {
+  background-color: rgba(43, 42, 42, 0.15);
+}
+
+.active {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+/* ========== FOOTER ========== */
+.footer,
+.sidebar-footer {
+  text-align: center;
+  padding: 6vh 2vw;
+  font-size: calc(12px + 0.3vw);
+  color: var(--secondary);
+  flex-shrink: 0;
+}
+.link {
+  color: white;
+  font-size: 1.5rem;
+  /* font-weight: 600; */
+}

@@ -1,0 +1,153 @@
+/* === Стили для HomePage (адаптированы) === */
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .title {
+    color: rgba(239, 55, 8, 0.83);
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Поисковая строка */
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 1rem;
+  }
+  
+  .search-bar button {
+    background-color: rgba(239, 55, 8, 0.83);
+    color: #2B2B2B;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Фильтры */
+  .filters {
+    display: flex;
+    gap: 1rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .filters label {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  /* Таблица */
+  .table-container {
+    margin-top: 20px;
+  }
+  
+  .results-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .results-table th,
+  .results-table td {
+    padding: 10px;
+    border: 1px solid #444;
+    text-align: center;
+  }
+  
+  .status-active {
+    color: #4CAF50;
+    font-weight: bold;
+  }
+  
+  .status-broken {
+    color: #EF3708;
+    font-weight: bold;
+  }
+  
+  .status-done {
+    color: #999;
+    font-style: italic;
+  }
+  
+  /* Тестовый список (доп) */
+  .test-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .test-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #444;
+  }
+  
+  .test-item:last-child {
+    border-bottom: none;
+  }
+  
+  .test-item span {
+    flex: 1;
+    text-align: center;
+  }
+  
+  /* === Bottom Menu === */
+  .bottom-menu {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  
+  .bottom-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0.6em 1.2em;
+    background-color: transparent;
+    color: #ff4500;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    border: 1px solid #ff4500;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex-direction: row-reverse;
+  }
+  
+  .bottom-btn:hover {
+    background: rgba(0, 0, 0, 0.03);
+    border-color: #943f21;
+  }
+  
+  .bottom-btn:active {
+    transform: scale(0.98);
+    background: #943f21;
+  }
+  
+  .bottom-btn-image {
+    margin-left: 10px;
+  }
+  
